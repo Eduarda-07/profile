@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="plano_fundo">Plano de fundo</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="whats">Whatsapp</string>
+    <string name="favorite">Favorite</string>
+    <string name="nomeUser">Jenny Wilson</string>
+    <string name="descricao">Sr.UI/UX Designer</string>
+    <string name="details">Details</string>
+    <string name="official">Official</string>
+    <string name="emailO">jenny@gmail.com</string>
+    <string name="personal">Personal</string>
+    <string name="emailP">jenny@gmail.com</string>
+</resources>
