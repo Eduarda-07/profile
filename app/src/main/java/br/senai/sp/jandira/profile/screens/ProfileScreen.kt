@@ -19,6 +19,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Groups
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.StarOutline
+import androidx.compose.material.icons.filled.Whatsapp
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -44,16 +48,16 @@ fun ProfileScreen (modifier: Modifier = Modifier){
     Box(
         modifier = Modifier
             .fillMaxSize()
-    ){
+    ) {
         Column {
-            Card (
+            Card(
                 shape = RoundedCornerShape(bottomStart = 30.dp, bottomEnd = 30.dp)
-            ){
+            ) {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(350.dp)
-                ){
+                ) {
                     Image(
                         painter = painterResource(
                             R.drawable.plano_fundo
@@ -64,19 +68,19 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                         contentScale = ContentScale.Crop,
                         modifier = Modifier.fillMaxSize()
                     )
-                    Column (
+                    Column(
                         modifier = Modifier
                             .fillMaxSize()
                             .padding(bottom = 20.dp, top = 20.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.SpaceBetween
-                    ){
-                        Row (
+                    ) {
+                        Row(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(top = 10.dp, bottom = 10.dp),
                             horizontalArrangement = Arrangement.Center
-                        ){
+                        ) {
                             Icon(
                                 imageVector = Icons.Default.ArrowBack,
                                 contentDescription = "",
@@ -84,8 +88,7 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                                 modifier = Modifier
                                     .size(18.dp)
                                     .weight(1F)
-                                    .padding(end = 40.dp)
-                                ,
+                                    .padding(end = 40.dp),
 
                                 )
                             Text(
@@ -102,12 +105,12 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                             )
                         }
 
-                        Card (
+                        Card(
                             modifier = Modifier
                                 .size(120.dp),
                             shape = CircleShape
 
-                        ){
+                        ) {
                             Image(
                                 painter = painterResource(
                                     R.drawable.perfil
@@ -141,32 +144,34 @@ fun ProfileScreen (modifier: Modifier = Modifier){
 //                                .padding(top = 30.dp)
                         )
 
-                        Row (
+                        Row(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(start = 20.dp, end = 20.dp),
                             horizontalArrangement = Arrangement.SpaceBetween,
-                        ){
-                            Card (
+                        ) {
+                            Card(
                                 modifier = Modifier
                                     .size(80.dp),
-                                shape = RoundedCornerShape( 20.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = CardDefaults.cardColors(
                                     containerColor = Color.Transparent
                                 ),
                                 border = BorderStroke(1.dp, Color(0xFFA2A2A2)),
 
-                                ){
-                                Column (
+                                ) {
+                                Column(
                                     modifier = Modifier
                                         .fillMaxSize(),
                                     horizontalAlignment = Alignment.CenterHorizontally,
                                     verticalArrangement = Arrangement.Center
-                                ){
+                                ) {
                                     Icon(
                                         imageVector = Icons.Default.Email,
                                         contentDescription = "",
-                                        tint = Color(0x9EDEDDDD)
+                                        tint = Color(0x9EDEDDDD),
+                                        modifier = Modifier
+                                            .size(30.dp)
                                     )
                                     Text(
                                         text = stringResource(
@@ -181,26 +186,28 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                                 }
 
                             }
-                            Card (
+                            Card(
                                 modifier = Modifier
                                     .size(80.dp),
-                                shape = RoundedCornerShape( 20.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = CardDefaults.cardColors(
                                     containerColor = Color.Transparent
                                 ),
                                 border = BorderStroke(1.dp, Color(0xFFA2A2A2)),
 
-                                ){
-                                Column (
+                                ) {
+                                Column(
                                     modifier = Modifier
                                         .fillMaxSize(),
                                     horizontalAlignment = Alignment.CenterHorizontally,
                                     verticalArrangement = Arrangement.Center
-                                ){
+                                ) {
                                     Icon(
                                         imageVector = Icons.Default.Call,
                                         contentDescription = "",
-                                        tint = Color(0x9EDEDDDD)
+                                        tint = Color(0x9EDEDDDD),
+                                        modifier = Modifier
+                                            .size(30.dp)
                                     )
                                     Text(
                                         text = stringResource(
@@ -215,28 +222,26 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                                 }
 
                             }
-                            Card (
+                            Card(
                                 modifier = Modifier
                                     .size(80.dp),
-                                shape = RoundedCornerShape( 20.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = CardDefaults.cardColors(
                                     containerColor = Color.Transparent
                                 ),
                                 border = BorderStroke(1.dp, Color(0xFFA2A2A2)),
 
-                                ){
-                                Column (
+                                ) {
+                                Column(
                                     modifier = Modifier
                                         .fillMaxSize(),
                                     horizontalAlignment = Alignment.CenterHorizontally,
                                     verticalArrangement = Arrangement.Center
-                                ){
-                                    Image(
-                                        painter = painterResource(
-                                            R.drawable.whats
-                                        ),
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.Default.Whatsapp,
                                         contentDescription = "",
-//                                contentScale = ContentScale.Crop,
+                                        tint = Color(0x9EDEDDDD),
                                         modifier = Modifier
                                             .size(30.dp)
                                     )
@@ -253,28 +258,26 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                                 }
 
                             }
-                            Card (
+                            Card(
                                 modifier = Modifier
                                     .size(80.dp),
-                                shape = RoundedCornerShape( 20.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = CardDefaults.cardColors(
                                     containerColor = Color.Transparent
                                 ),
                                 border = BorderStroke(1.dp, Color(0xFFA2A2A2)),
 
-                                ){
-                                Column (
+                                ) {
+                                Column(
                                     modifier = Modifier
                                         .fillMaxSize(),
                                     horizontalAlignment = Alignment.CenterHorizontally,
                                     verticalArrangement = Arrangement.Center
-                                ){
-                                    Image(
-                                        painter = painterResource(
-                                            R.drawable.star
-                                        ),
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.Default.StarOutline,
                                         contentDescription = "",
-//                                contentScale = ContentScale.Crop,
+                                        tint = Color(0x9EDEDDDD),
                                         modifier = Modifier
                                             .size(30.dp)
                                     )
@@ -289,17 +292,17 @@ fun ProfileScreen (modifier: Modifier = Modifier){
 //                                .padding(top = 30.dp)
                                     )
                                 }
+
                             }
                         }
                     }
                 }
-
             }
             Card (
                 modifier = Modifier
                     .height(160.dp)
                     .fillMaxWidth()
-                   ,
+                ,
 //                colors = CardDefaults.cardColors(
 //                    containerColor = Color.Cyan
 //                ),
@@ -320,8 +323,8 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                         color = Color.Black,
                         fontSize = 18.sp,
                         fontWeight = FontWeight.W500,
-                            modifier = Modifier
-                                .padding(start = 15.dp)
+                        modifier = Modifier
+                            .padding(start = 15.dp)
                     )
                 }
                 Text(
@@ -430,7 +433,7 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                         .padding(15.dp)
                 ){
                     Icon(
-                        imageVector = Icons.Default.,
+                        imageVector = Icons.Default.Groups,
                         contentDescription = "",
                         tint = Color(0xFF9460F3)
                     )
@@ -469,9 +472,11 @@ fun ProfileScreen (modifier: Modifier = Modifier){
             }
         }
 
-    }
+        }
 
 }
+
+
 
 @Preview(showSystemUi = true)
 @Composable
