@@ -297,7 +297,7 @@ fun ProfileScreen (modifier: Modifier = Modifier){
             }
             Card (
                 modifier = Modifier
-                    .height(150.dp)
+                    .height(160.dp)
                     .fillMaxWidth()
                    ,
 //                colors = CardDefaults.cardColors(
@@ -336,7 +336,7 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                 )
                 Text(
                     text = stringResource(
-                        R.string.email
+                        R.string.emailO
                     ),
                     color = Color.Black,
                     fontSize = 18.sp,
@@ -346,24 +346,126 @@ fun ProfileScreen (modifier: Modifier = Modifier){
                 )
                 Text(
                     text = stringResource(
-                        R.string.email
+                        R.string.personal
                     ),
-                    color = Color.Black,
+                    color = Color(0xFFA2A2A2),
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.W500,
+                    fontWeight = FontWeight.W400,
                     modifier = Modifier
-                        .padding(start = 15.dp)
+                        .padding(start = 53.dp, top = 15.dp)
                 )
                 Text(
                     text = stringResource(
-                        R.string.email
+                        R.string.emailP
                     ),
                     color = Color.Black,
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.W500,
+                    fontWeight = FontWeight.W400,
                     modifier = Modifier
-                        .padding(start = 15.dp)
+                        .padding(start = 53.dp)
                 )
+            }
+            Card (
+                modifier = Modifier
+                    .height(110.dp)
+                    .fillMaxWidth()
+                ,
+//                colors = CardDefaults.cardColors(
+//                    containerColor = Color.Cyan
+//                ),
+            ){
+                Row (
+                    modifier = Modifier
+                        .padding(15.dp)
+                ){
+                    Icon(
+                        imageVector = Icons.Default.Call,
+                        contentDescription = "",
+                        tint = Color(0xFF9460F3)
+                    )
+                    Text(
+                        text = stringResource(
+                            R.string.phoneNumber
+                        ),
+                        color = Color.Black,
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.W500,
+                        modifier = Modifier
+                            .padding(start = 15.dp)
+                    )
+                }
+                Text(
+                    text = stringResource(
+                        R.string.mobile
+                    ),
+                    color = Color(0xFFA2A2A2),
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.W400,
+                    modifier = Modifier
+                        .padding(start = 53.dp)
+                )
+                Text(
+                    text = stringResource(
+                        R.string.numero
+                    ),
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.W400,
+                    modifier = Modifier
+                        .padding(start = 53.dp)
+                )
+
+            }
+            Card (
+                modifier = Modifier
+                    .height(110.dp)
+                    .fillMaxWidth()
+                ,
+//                colors = CardDefaults.cardColors(
+//                    containerColor = Color.Cyan
+//                ),
+            ){
+                Row (
+                    modifier = Modifier
+                        .padding(15.dp)
+                ){
+                    Icon(
+                        imageVector = Icons.Default.,
+                        contentDescription = "",
+                        tint = Color(0xFF9460F3)
+                    )
+                    Text(
+                        text = stringResource(
+                            R.string.phoneNumber
+                        ),
+                        color = Color.Black,
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.W500,
+                        modifier = Modifier
+                            .padding(start = 15.dp)
+                    )
+                }
+                Text(
+                    text = stringResource(
+                        R.string.mobile
+                    ),
+                    color = Color(0xFFA2A2A2),
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.W400,
+                    modifier = Modifier
+                        .padding(start = 53.dp)
+                )
+                Text(
+                    text = stringResource(
+                        R.string.numero
+                    ),
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.W400,
+                    modifier = Modifier
+                        .padding(start = 53.dp)
+                )
+
             }
         }
 

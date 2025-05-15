@@ -12,4 +12,7 @@
     <string name="emailO">jenny@gmail.com</string>
     <string name="personal">Personal</string>
     <string name="emailP">jenny@gmail.com</string>
+    <string name="phoneNumber">Phone number</string>
+    <string name="mobile">Mobile</string>
+    <string name="numero">(209) 555-0104</string>
 </resources>
